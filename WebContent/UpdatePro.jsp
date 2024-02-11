@@ -1,0 +1,136 @@
+<%
+	String Name=request.getParameter("name");
+	String p=request.getParameter("price");
+	int Price=Integer.parseInt(p);
+	String Category=request.getParameter("cat");
+	String Company=request.getParameter("cmp");
+%>
+<body>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Free Design Template - Free CSS Template</title>
+<meta name="keywords" content="free design template, CSS template, HTML website" />
+<meta name="description" content="Free Design Template, Free CSS Website, XHTML CSS layout" />
+<link href="addproduct.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.style1 {color: #cc0000}
+.style3 {color: #FFFF00}
+-->
+</style>
+</head>
+<body>
+<!--  Download Free CSS Templates from www.templatemo.com  -->	
+<div id="templatemo_header_panel">
+	<div id="templatemo_header_section">
+   	  <div id="templatemo_title_section">
+   	    <p>&nbsp;</p>
+   	    <p>UPDATE PRODUCT </p>
+   	  </div>
+        <div class="style1" id="tagline"></div>
+    </div>
+</div> <!-- end of haeder -->
+
+
+<div id="templatemo_content">
+
+	<div id="templatemo_content_column_one">
+    	<div class="column_one_section">
+    	  <ul>
+    	 <form action="Update.jsp">
+	<h3 style="margin-left:100px"><span class="style3">Product Name</span> <br /><br />
+	 <%=Name%>
+	  <input type="hidden" name="name" value="<%=Name%>" required /><br></h3>
+	
+	<h3 style="margin-left:100px"><span class="style3">Product Categories</span> <br />
+	<br />
+	
+	  <select name="cat" required>
+		<option >MOBILE</option>
+		<option>BLUETOOTH NECKBAND</option>
+		<option>BLUETOOTH EARPODS</option>
+		<option>POWER BANK</option>
+		<option>HANDFREE</option>
+	</select>
+	</h3>
+	
+	
+	<h3 style="margin-left:100px"><span class="style3">Product Price</span> <br /><br />
+	  <input type="number" name="price" value="<%=Price%>" required /></h3>
+	
+	<h3 style="margin-left:100px"><span class="style3">Product Company</span> <br /><br />
+	<select name="cmp" required >
+		<option>SAMSUNG MOBILE</option>
+		<option>REALME MOBILE</option>	
+		<option>XIAOMI MOBILE</option>	
+		<option>VIVO MOBILE</option>
+		
+		<option>OPPO MOBILE</option>
+		<option>HONOR MOBILE</option>
+		<option>APPLE MOBILE</option>
+		<option>ONEPLUS MOBILE</option>
+		<option>NOKIA MOBILE</option>
+		<option>LG MOBILE</option>
+		<option>SONY NECKBAND</option>
+		<option>REALME NECKBAND</option>
+		<option>ONEPLUS BULLETS NECKBAND</option>
+		<option>BOAT ROCKERZ NECKBAND</option>
+		<option>BOULT NECKBAND</option>
+		<option>SONY AIRPODS</option>
+		<option>APPLE AIRPODS</option>
+		<option>OPPO AIRPODS</option>
+		<option>ONEPLUS AIRPODS</option>
+		<option>SAMSUNG AIRPODS</option>
+		<option>JBL AIRPODS</option>
+		<option>REALME AIRPODS</option>
+		<option>MI POWER BANK</option>
+		<option>INTEX POWER BANK</option>
+		<option>LENOVO POWER BANK</option>
+		<option>HONOR POWER BANK</option>
+		<option>AMBRANE POWER BANK</option>
+		<option>BOAT EARPHONE</option>
+		<option>PHILLIPS EARPHONE</option>
+		<option>PTRON PRIDE LITE EARPHONE</option>
+		<option>MI EARPHONE</option>
+		<option>BOULT EARPHONE</option>
+		</select></h3>
+		<br>
+		
+		<input type="submit" style="margin-left:160px;background-color:#FFFF00" value="Update" />
+		
+	</table>
+	</form>
+
+    	</ul>                  
+      </div>
+        
+        <div class="column_one_section"></div>
+        
+        
+    </div> <!-- end of column one -->
+    <!-- end of column two -->
+<div class="column_three_section"></div>
+               
+        <div class="column_three_section"></div>  
+          
+</div> <!-- end of column three -->
+</div>
+<!-- end of content -->
+<div id="templatemo_bottom_panel">
+
+	<div class="bottom_panel_section">
+   	<a href="#"></a></div>
+    
+  <div class="bottom_panel_section"></div>
+
+</div>
+<!-- end of bottom panel -->
+<!--  Free CSS Template by TemplateMo.com  -->
+<div align=center></div>
+</body>
+</html>
+
+</body>
